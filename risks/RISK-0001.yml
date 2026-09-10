@@ -1,0 +1,11 @@
+uid: RISK-0001
+type: risk
+status: proposed
+title: A promised destination that fails reads as abandonment
+text: A link is published before its destination exists, and the destination answers
+  with an error. A visitor cannot tell not-yet from gone. A crawler records the failure.
+  The site's credibility is spent at the first click, and the cost lands on the whole
+  site, not on the missing page.
+normative: true
+attrs:
+  origin: ai

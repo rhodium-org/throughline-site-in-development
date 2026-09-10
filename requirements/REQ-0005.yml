@@ -1,0 +1,19 @@
+uid: REQ-0005
+type: requirement
+status: proposed
+title: A holding page carries the finished site's security posture
+text: A holding page is served over the same TLS and with the same security headers
+  as the finished site will be. Its content security policy is the narrowest the
+  page can carry. A holding page runs no script, so its policy allows none. It is
+  not a place to relax anything because it is only a placeholder.
+rationale: 'The holding page is the first thing served at that origin. Browsers,
+  crawlers and preload lists record what they see, and a weak start is remembered.
+  Who pays: the site owner, once, in setting the headers before the first byte is
+  served.'
+normative: true
+links:
+- target: INT-0001
+  type: implements
+attrs:
+  priority: must
+  origin: ai

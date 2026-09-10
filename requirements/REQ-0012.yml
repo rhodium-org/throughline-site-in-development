@@ -1,0 +1,20 @@
+uid: REQ-0012
+type: requirement
+status: proposed
+title: No sample or draft text reaches a public response
+text: Placeholder text, sample data, lorem ipsum, editorial notes and to-do markers
+  do not appear in any public response. A page that is not ready to be read is not
+  published; a holding page stands in its place. An automated check for known placeholder
+  patterns runs before each deployment.
+rationale: 'Rejected: relying on review to catch it. Placeholder text looks like
+  content to a tired reviewer, and a pattern check does not tire. Who pays: the author,
+  who must decide a page is finished before it is public. That is the point.'
+normative: true
+links:
+- target: INT-0001
+  type: implements
+- target: RISK-0002
+  type: mitigates
+attrs:
+  priority: must
+  origin: ai

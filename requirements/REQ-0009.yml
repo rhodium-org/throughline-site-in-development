@@ -1,0 +1,19 @@
+uid: REQ-0009
+type: requirement
+status: proposed
+title: Every holding page has a recorded owner and removal condition
+text: For each holding page the site records, where its requirements live, who owns
+  it and what event ends it. The holding page is removed by the same change that
+  ships the content it stood in for, never by a later clean-up. A holding page nobody
+  can name the owner of is a defect.
+rationale: 'Rejected: a temporary label alone. Labels do not remove anything. The
+  removal condition ties the page to a change someone will make anyway.'
+normative: true
+links:
+- target: INT-0001
+  type: implements
+- target: RISK-0003
+  type: mitigates
+attrs:
+  priority: must
+  origin: ai

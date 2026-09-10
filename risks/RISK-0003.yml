@@ -1,0 +1,11 @@
+uid: RISK-0003
+type: risk
+status: proposed
+title: An interim arrangement becomes permanent because nothing removes it
+text: A holding page, a temporary redirect or a hand-applied fix is put in place
+  to get past a moment. Nothing records that it is interim or what would end it.
+  The moment passes, the people change, and the arrangement stays. The site accumulates
+  exceptions nobody can explain.
+normative: true
+attrs:
+  origin: ai

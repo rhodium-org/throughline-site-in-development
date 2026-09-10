@@ -1,0 +1,18 @@
+uid: REQ-0006
+type: requirement
+status: proposed
+title: A holding page sets no cookies, keeps no state and accepts no input
+text: A holding page sets no cookie, stores nothing in the browser and contains no
+  form or other input. It is a read-only statement. Where the address is reserved
+  for a stricter trust boundary than the site that links to it, such as an authentication
+  origin, the holding page contains nothing that boundary would later have to disown.
+rationale: 'Anything a holding page collects has no owner and no purpose yet. Anything
+  it stores becomes state the real content inherits. Rejected: an email sign-up on
+  the holding page. That is a landing page, which NG-0001 excludes.'
+normative: true
+links:
+- target: INT-0001
+  type: implements
+attrs:
+  priority: must
+  origin: ai

@@ -1,0 +1,35 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  # The tool moves under this graph, not with it. Nothing here pins throughline on
+  # purpose — the gate should be the current one — but that only says something if
+  # it runs. Without this, a graph nobody touches is never re-checked, and a rule
+  # added upstream goes unnoticed until somebody else trips over it.
+  schedule:
+    - cron: "0 6 * * 1"
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install throughline
+        run: pip install throughline
+
+      # Stays red while any AI-authored item is still awaiting human ratification.
+      # That is the ratification gate doing its job, not a build failure to route around.
+      - name: Grounding gate (the graph must stay sound)
+        run: tl check --strict
+
+      - name: Docs freshness gate (docs/spec.md must match the graph)
+        run: tl docs --check

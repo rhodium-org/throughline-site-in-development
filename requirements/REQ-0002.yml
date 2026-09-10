@@ -1,0 +1,21 @@
+uid: REQ-0002
+type: requirement
+status: proposed
+title: A holding page says what is coming and that it is not here yet
+text: A holding page names what the address is for, states plainly that the content
+  is not yet available, and links back to the site that sent the visitor there. It
+  does not pretend to be the finished thing. Where a date or a condition can be given
+  honestly it gives one. Where it cannot, it says nothing about timing rather than
+  guessing.
+rationale: 'Rejected: a bare coming-soon line with no context. The visitor followed
+  a link that described the destination, so the holding page must at least repeat
+  that description. Otherwise the click was wasted.'
+normative: true
+links:
+- target: INT-0001
+  type: implements
+- target: RISK-0001
+  type: mitigates
+attrs:
+  priority: must
+  origin: hybrid

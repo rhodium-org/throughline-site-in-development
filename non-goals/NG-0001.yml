@@ -1,0 +1,11 @@
+uid: NG-0001
+type: non_goal
+status: proposed
+title: A holding page is not a landing page
+text: This source does not cover launch marketing. It says nothing about email capture,
+  countdowns, teasers or campaign pages. A holding page tells the truth about an
+  address. A landing page persuades. The two have different owners and different
+  rules.
+normative: true
+attrs:
+  origin: hybrid

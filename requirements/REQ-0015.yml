@@ -1,0 +1,19 @@
+uid: REQ-0015
+type: requirement
+status: proposed
+title: The site says what is live and what is still to come
+text: 'A site in development states its own status somewhere a visitor will find
+  it: which parts are live, which are coming, and where to report a problem. This
+  may be one page or a line on each holding page. It is kept current by the same
+  changes that ship content, not by a separate editorial effort.'
+rationale: 'Who pays: the site owner, who admits in public that the site is unfinished.
+  That is cheaper than a visitor discovering it alone.'
+normative: true
+links:
+- target: INT-0001
+  type: implements
+- target: RISK-0001
+  type: mitigates
+attrs:
+  priority: should
+  origin: ai

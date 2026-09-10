@@ -1,0 +1,11 @@
+uid: RISK-0002
+type: risk
+status: proposed
+title: Placeholder content outlives its replacement
+text: Interim content is indexed, cached, linked and archived like any other content.
+  Once it is in the record it can outlive the real content that replaces it. Sample
+  text, draft wording and holding pages that were never meant to be seen are then
+  quoted back at the site for years.
+normative: true
+attrs:
+  origin: ai

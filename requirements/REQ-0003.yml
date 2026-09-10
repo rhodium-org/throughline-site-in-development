@@ -1,0 +1,23 @@
+uid: REQ-0003
+type: requirement
+status: proposed
+title: A holding page is a successful response
+text: A holding page returns HTTP 200 at the address that was published. It is a
+  successful response whose content says not yet. It does not return 404, 503 or
+  any other error status at that address. Addresses under a holding host that were
+  never published still return 404, with the holding page as the body where that
+  helps.
+rationale: 'Rejected: 503 with Retry-After. That status describes an outage, not
+  an absence. Crawlers treat a long-lived 503 as a failing site and eventually drop
+  the address, and many edge networks replace a 5xx body with their own error page,
+  so the visitor never sees the site''s wording. Rejected: 404. It is the same response
+  a mistyped address gives, so it says nothing.'
+normative: true
+links:
+- target: INT-0001
+  type: implements
+- target: RISK-0001
+  type: mitigates
+attrs:
+  priority: must
+  origin: ai

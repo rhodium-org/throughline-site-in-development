@@ -1,0 +1,18 @@
+uid: REQ-0008
+type: requirement
+status: proposed
+title: A holding page is a real page for every visitor
+text: A holding page has a page title that names the site, a declared language, a
+  heading, readable contrast and link text that says where each link goes. It reads
+  correctly with styles disabled and with a screen reader. It is text, not an image
+  of text.
+rationale: A holding page is often the only page many visitors ever see. It must
+  meet the same accessibility bar as the finished site, and it is small enough that
+  there is no excuse for missing it.
+normative: true
+links:
+- target: INT-0001
+  type: implements
+attrs:
+  priority: must
+  origin: ai

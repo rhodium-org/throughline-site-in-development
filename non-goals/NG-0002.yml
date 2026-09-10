@@ -1,0 +1,11 @@
+uid: NG-0002
+type: non_goal
+status: proposed
+title: Planned downtime of a finished site is out of scope
+text: This source does not cover maintenance windows or outages of content that has
+  already shipped. Those are short, use 503 with Retry-After, and belong to the site's
+  operational runbook. A holding page is for content that has not yet existed at
+  an address.
+normative: true
+attrs:
+  origin: hybrid

@@ -1,0 +1,20 @@
+uid: REQ-0013
+type: requirement
+status: proposed
+title: Interim content ships through the same delivery path as finished content
+text: A holding page, a redirect or any other interim response is built, reviewed
+  and deployed through the same pipeline as the finished site. Nothing is edited
+  on a live server by hand. What is running is always what is committed, so an interim
+  response can be found, understood and removed later by reading the repository.
+rationale: 'Rejected: uploading the file by hand because it is only a static page.
+  A hand-placed file is exactly the interim arrangement RISK-0003 describes. Nothing
+  records it and nothing removes it.'
+normative: true
+links:
+- target: INT-0001
+  type: implements
+- target: RISK-0003
+  type: mitigates
+attrs:
+  priority: must
+  origin: ai

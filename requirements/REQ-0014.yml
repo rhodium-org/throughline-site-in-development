@@ -1,0 +1,21 @@
+uid: REQ-0014
+type: requirement
+status: proposed
+title: Every public response is verified from the visitor's position
+text: After each deployment the site is checked from outside its own infrastructure,
+  at its public addresses, through whatever edge or proxy sits in front of it. The
+  check confirms the status code, the headers the site claims to send, and that the
+  body is the site's own. A check inside the infrastructure does not count, because
+  it does not see what the visitor sees.
+rationale: 'An edge network can rewrite a status, replace a body or strip a header,
+  and the origin never knows. Who pays: the site''s pipeline, with one external request
+  per address. The alternative is a green build and a broken site.'
+normative: true
+links:
+- target: INT-0001
+  type: implements
+- target: RISK-0001
+  type: mitigates
+attrs:
+  priority: must
+  origin: ai

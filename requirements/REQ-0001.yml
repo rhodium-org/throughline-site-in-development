@@ -1,0 +1,21 @@
+uid: REQ-0001
+type: requirement
+status: proposed
+title: A link is published only when its destination answers
+text: A site publishes a link to a destination only when that destination returns
+  a successful response. Until then the link is either not published or points at
+  a holding page that answers. A published link that leads to an error is a defect
+  in the site that published it, whoever owns the destination.
+rationale: 'Rejected: publishing the link early to reserve the name. The name is
+  reserved by owning the domain, not by linking to it. Who pays: the site owner,
+  who must stand up a holding page before announcing anything. That is a small one-off
+  cost; a dead link costs every visitor.'
+normative: true
+links:
+- target: INT-0001
+  type: implements
+- target: RISK-0001
+  type: mitigates
+attrs:
+  priority: must
+  origin: hybrid
