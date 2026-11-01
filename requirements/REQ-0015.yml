@@ -1,6 +1,6 @@
 uid: REQ-0015
 type: requirement
-status: proposed
+status: ratified
 title: The site says what is live and what is still to come
 text: 'A site in development states its own status somewhere a visitor will find
   it: which parts are live, which are coming, and where to report a problem. This
@@ -17,3 +17,17 @@ links:
 attrs:
   priority: should
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:51910f4107997bce8f76a670301a7b92a556f1b182d6f2959c371faa54ac0edc
+  content:
+    type: requirement
+    text: 'A site in development states its own status somewhere a visitor will find
+      it: which parts are live, which are coming, and where to report a problem.
+      This may be one page or a line on each holding page. It is kept current by
+      the same changes that ship content, not by a separate editorial effort.'
+    normative: true
+    derived: false
+    attrs:
+      priority: should
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

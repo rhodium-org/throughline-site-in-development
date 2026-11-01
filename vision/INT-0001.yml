@@ -1,6 +1,6 @@
 uid: INT-0001
 type: intent
-status: proposed
+status: ratified
 title: A site that is public while it is being built is judged by what it serves
   today
 text: A site under active development is often reachable before it is finished. Visitors,
@@ -12,3 +12,18 @@ text: A site under active development is often reachable before it is finished. 
 normative: true
 attrs:
   origin: hybrid
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:8db66db4b669c467c4c0be701df2b2866a27bfd8e2286c26ff69d9ac03873193
+  content:
+    type: intent
+    text: A site under active development is often reachable before it is finished.
+      Visitors, crawlers and other sites do not wait for the finish. They judge the
+      site by the response they get now. So the quality of a site in development
+      is the quality of its worst reachable response, not the quality of the plan.
+      Every published address is a promise. The site keeps every promise it has made,
+      or says plainly at that address that it cannot yet.
+    normative: true
+    derived: false
+    attrs: {}
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

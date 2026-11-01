@@ -1,6 +1,6 @@
 uid: REQ-0010
 type: requirement
-status: proposed
+status: ratified
 title: Every published link is walked by an automated check
 text: An automated check follows every link the site publishes, from outside the
   site, and fails on any response that is not successful. It runs after every deployment
@@ -18,3 +18,18 @@ links:
 attrs:
   priority: must
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:7347fb84674d3345454d71ac1ebc20aac9b0f52c5fd8ae9a6ba571cfecd2e1b4
+  content:
+    type: requirement
+    text: An automated check follows every link the site publishes, from outside
+      the site, and fails on any response that is not successful. It runs after every
+      deployment and on a schedule, because a destination the site does not own can
+      fail without any change to the site. A failing check is treated as a defect,
+      not as noise.
+    normative: true
+    derived: false
+    attrs:
+      priority: must
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

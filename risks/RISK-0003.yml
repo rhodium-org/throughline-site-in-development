@@ -1,6 +1,6 @@
 uid: RISK-0003
 type: risk
-status: proposed
+status: ratified
 title: An interim arrangement becomes permanent because nothing removes it
 text: A holding page, a temporary redirect or a hand-applied fix is put in place
   to get past a moment. Nothing records that it is interim or what would end it.
@@ -9,3 +9,16 @@ text: A holding page, a temporary redirect or a hand-applied fix is put in place
 normative: true
 attrs:
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:2f6a15511eb9fd0728b2698325acd26a279ba5c24d86c170839797958780e338
+  content:
+    type: risk
+    text: A holding page, a temporary redirect or a hand-applied fix is put in place
+      to get past a moment. Nothing records that it is interim or what would end
+      it. The moment passes, the people change, and the arrangement stays. The site
+      accumulates exceptions nobody can explain.
+    normative: true
+    derived: false
+    attrs: {}
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

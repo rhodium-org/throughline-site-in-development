@@ -1,6 +1,6 @@
 uid: REQ-0013
 type: requirement
-status: proposed
+status: ratified
 title: Interim content ships through the same delivery path as finished content
 text: A holding page, a redirect or any other interim response is built, reviewed
   and deployed through the same pipeline as the finished site. Nothing is edited
@@ -18,3 +18,18 @@ links:
 attrs:
   priority: must
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:41374ff0de53c291951eb1e6c7203ddc5de5cf3a08554d9fd4db8983195e5b39
+  content:
+    type: requirement
+    text: A holding page, a redirect or any other interim response is built, reviewed
+      and deployed through the same pipeline as the finished site. Nothing is edited
+      on a live server by hand. What is running is always what is committed, so an
+      interim response can be found, understood and removed later by reading the
+      repository.
+    normative: true
+    derived: false
+    attrs:
+      priority: must
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

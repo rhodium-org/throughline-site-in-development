@@ -1,6 +1,6 @@
 uid: REQ-0009
 type: requirement
-status: proposed
+status: ratified
 title: Every holding page has a recorded owner and removal condition
 text: For each holding page the site records, where its requirements live, who owns
   it and what event ends it. The holding page is removed by the same change that
@@ -17,3 +17,17 @@ links:
 attrs:
   priority: must
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:bffc0c13e4447c71960e0a3993e79f3f0041a74ee22904ee93ab837673c7aa89
+  content:
+    type: requirement
+    text: For each holding page the site records, where its requirements live, who
+      owns it and what event ends it. The holding page is removed by the same change
+      that ships the content it stood in for, never by a later clean-up. A holding
+      page nobody can name the owner of is a defect.
+    normative: true
+    derived: false
+    attrs:
+      priority: must
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

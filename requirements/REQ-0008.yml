@@ -1,6 +1,6 @@
 uid: REQ-0008
 type: requirement
-status: proposed
+status: ratified
 title: A holding page is a real page for every visitor
 text: A holding page has a page title that names the site, a declared language, a
   heading, readable contrast and link text that says where each link goes. It reads
@@ -16,3 +16,17 @@ links:
 attrs:
   priority: must
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:3fdd8e1be232a5b11e084f501855415c0f13b8e8002edc7f0aa5a20e76f91822
+  content:
+    type: requirement
+    text: A holding page has a page title that names the site, a declared language,
+      a heading, readable contrast and link text that says where each link goes.
+      It reads correctly with styles disabled and with a screen reader. It is text,
+      not an image of text.
+    normative: true
+    derived: false
+    attrs:
+      priority: must
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

@@ -1,6 +1,6 @@
 uid: REQ-0011
 type: requirement
-status: proposed
+status: ratified
 title: A published address is never abandoned
 text: During active development addresses move often. When content moves, the old
   address redirects permanently to the new one. When content is withdrawn, the old
@@ -18,3 +18,18 @@ links:
 attrs:
   priority: should
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:c33d0c16ba06fe7f8dfa8481f997341bab9b5a556d0906bffaff145e52ecca6c
+  content:
+    type: requirement
+    text: During active development addresses move often. When content moves, the
+      old address redirects permanently to the new one. When content is withdrawn,
+      the old address returns 410 with a page that says the content has gone and
+      where to go instead. An address that once answered does not start returning
+      404.
+    normative: true
+    derived: false
+    attrs:
+      priority: should
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

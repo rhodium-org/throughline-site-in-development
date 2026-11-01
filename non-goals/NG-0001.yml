@@ -1,6 +1,6 @@
 uid: NG-0001
 type: non_goal
-status: proposed
+status: ratified
 title: A holding page is not a landing page
 text: This source does not cover launch marketing. It says nothing about email capture,
   countdowns, teasers or campaign pages. A holding page tells the truth about an
@@ -9,3 +9,16 @@ text: This source does not cover launch marketing. It says nothing about email c
 normative: true
 attrs:
   origin: hybrid
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:b0fe28b14bf18fcd8e4fc4e333423b0ac8287fa89df18859f3d60e4ed1102fd8
+  content:
+    type: non_goal
+    text: This source does not cover launch marketing. It says nothing about email
+      capture, countdowns, teasers or campaign pages. A holding page tells the truth
+      about an address. A landing page persuades. The two have different owners and
+      different rules.
+    normative: true
+    derived: false
+    attrs: {}
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

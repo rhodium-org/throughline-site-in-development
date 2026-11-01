@@ -1,6 +1,6 @@
 uid: REQ-0005
 type: requirement
-status: proposed
+status: ratified
 title: A holding page carries the finished site's security posture
 text: A holding page is served over the same TLS and with the same security headers
   as the finished site will be. Its content security policy is the narrowest the
@@ -17,3 +17,17 @@ links:
 attrs:
   priority: must
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:ae59b08b627ea177eb0c9d73b6408bd3c96ddf439daad6ac88b0c47f2a7687ba
+  content:
+    type: requirement
+    text: A holding page is served over the same TLS and with the same security headers
+      as the finished site will be. Its content security policy is the narrowest
+      the page can carry. A holding page runs no script, so its policy allows none.
+      It is not a place to relax anything because it is only a placeholder.
+    normative: true
+    derived: false
+    attrs:
+      priority: must
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

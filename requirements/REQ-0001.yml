@@ -1,6 +1,6 @@
 uid: REQ-0001
 type: requirement
-status: proposed
+status: ratified
 title: A link is published only when its destination answers
 text: A site publishes a link to a destination only when that destination returns
   a successful response. Until then the link is either not published or points at
@@ -19,3 +19,17 @@ links:
 attrs:
   priority: must
   origin: hybrid
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:4fb8bd38351b753b0aadbe94033cbcd2222ae2fc540e90dc751144759c7ec120
+  content:
+    type: requirement
+    text: A site publishes a link to a destination only when that destination returns
+      a successful response. Until then the link is either not published or points
+      at a holding page that answers. A published link that leads to an error is
+      a defect in the site that published it, whoever owns the destination.
+    normative: true
+    derived: false
+    attrs:
+      priority: must
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

@@ -1,6 +1,6 @@
 uid: REQ-0004
 type: requirement
-status: proposed
+status: ratified
 title: A holding page is kept out of search indexes
 text: A holding page declares itself not indexable in both the response header and
   the document, and it is not listed in any sitemap the site publishes. When the
@@ -19,3 +19,18 @@ links:
 attrs:
   priority: must
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:053d301a9397db937329ff829653053ac85ba7c5a10b86394cccd11d42f1f23e
+  content:
+    type: requirement
+    text: A holding page declares itself not indexable in both the response header
+      and the document, and it is not listed in any sitemap the site publishes. When
+      the real content ships, the noindex marking leaves with the holding page. The
+      address is never blocked in robots rules, because a blocked address cannot
+      be re-read when the real content arrives.
+    normative: true
+    derived: false
+    attrs:
+      priority: must
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

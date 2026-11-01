@@ -1,6 +1,6 @@
 uid: REQ-0007
 type: requirement
-status: proposed
+status: ratified
 title: A holding page loads nothing from a third party
 text: 'A holding page references no third-party resource: no external font, script,
   stylesheet, image or analytics. Everything it needs is served from its own origin
@@ -16,3 +16,17 @@ links:
 attrs:
   priority: should
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:019f4063a8905d1a60023568f60d92b6001738ae5a6db2a615041fffb501d7a4
+  content:
+    type: requirement
+    text: 'A holding page references no third-party resource: no external font, script,
+      stylesheet, image or analytics. Everything it needs is served from its own
+      origin or inlined. It can therefore load with no network access beyond its
+      own host, and it tells no one else that the visitor came.'
+    normative: true
+    derived: false
+    attrs:
+      priority: should
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

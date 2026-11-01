@@ -1,6 +1,6 @@
 uid: REQ-0014
 type: requirement
-status: proposed
+status: ratified
 title: Every public response is verified from the visitor's position
 text: After each deployment the site is checked from outside its own infrastructure,
   at its public addresses, through whatever edge or proxy sits in front of it. The
@@ -19,3 +19,18 @@ links:
 attrs:
   priority: must
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:691734b16bac2cd933f3c4ed81dab23ea05c3879f13acfeb66c4bec2404d8480
+  content:
+    type: requirement
+    text: After each deployment the site is checked from outside its own infrastructure,
+      at its public addresses, through whatever edge or proxy sits in front of it.
+      The check confirms the status code, the headers the site claims to send, and
+      that the body is the site's own. A check inside the infrastructure does not
+      count, because it does not see what the visitor sees.
+    normative: true
+    derived: false
+    attrs:
+      priority: must
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

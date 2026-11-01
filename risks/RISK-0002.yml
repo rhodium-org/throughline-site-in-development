@@ -1,6 +1,6 @@
 uid: RISK-0002
 type: risk
-status: proposed
+status: ratified
 title: Placeholder content outlives its replacement
 text: Interim content is indexed, cached, linked and archived like any other content.
   Once it is in the record it can outlive the real content that replaces it. Sample
@@ -9,3 +9,16 @@ text: Interim content is indexed, cached, linked and archived like any other con
 normative: true
 attrs:
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:792acb19864a5066eba57e4d9a09bb2560699b73325b11745e55a81dea7ee968
+  content:
+    type: risk
+    text: Interim content is indexed, cached, linked and archived like any other
+      content. Once it is in the record it can outlive the real content that replaces
+      it. Sample text, draft wording and holding pages that were never meant to be
+      seen are then quoted back at the site for years.
+    normative: true
+    derived: false
+    attrs: {}
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

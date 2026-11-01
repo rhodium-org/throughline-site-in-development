@@ -1,6 +1,6 @@
 uid: REQ-0012
 type: requirement
-status: proposed
+status: ratified
 title: No sample or draft text reaches a public response
 text: Placeholder text, sample data, lorem ipsum, editorial notes and to-do markers
   do not appear in any public response. A page that is not ready to be read is not
@@ -18,3 +18,17 @@ links:
 attrs:
   priority: must
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:cf869e3dfa6da2b142f7ebd5a6b4c25c0c71c7fd27bda2a4f0856c85b6a5b7ca
+  content:
+    type: requirement
+    text: Placeholder text, sample data, lorem ipsum, editorial notes and to-do markers
+      do not appear in any public response. A page that is not ready to be read is
+      not published; a holding page stands in its place. An automated check for known
+      placeholder patterns runs before each deployment.
+    normative: true
+    derived: false
+    attrs:
+      priority: must
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

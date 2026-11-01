@@ -1,6 +1,6 @@
 uid: REQ-0006
 type: requirement
-status: proposed
+status: ratified
 title: A holding page sets no cookies, keeps no state and accepts no input
 text: A holding page sets no cookie, stores nothing in the browser and contains no
   form or other input. It is a read-only statement. Where the address is reserved
@@ -16,3 +16,18 @@ links:
 attrs:
   priority: must
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:35b9eefed220531b2b401c66f0cd8196bfa92fedd50c793c991ce306a5df1242
+  content:
+    type: requirement
+    text: A holding page sets no cookie, stores nothing in the browser and contains
+      no form or other input. It is a read-only statement. Where the address is reserved
+      for a stricter trust boundary than the site that links to it, such as an authentication
+      origin, the holding page contains nothing that boundary would later have to
+      disown.
+    normative: true
+    derived: false
+    attrs:
+      priority: must
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36

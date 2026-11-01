@@ -1,6 +1,6 @@
 uid: REQ-0003
 type: requirement
-status: proposed
+status: ratified
 title: A holding page is a successful response
 text: A holding page returns HTTP 200 at the address that was published. It is a
   successful response whose content says not yet. It does not return 404, 503 or
@@ -21,3 +21,18 @@ links:
 attrs:
   priority: must
   origin: ai
+ratifications:
+- by: Henry Grech-Cini
+  fingerprint: sha256:f2bc6bea88c34e7d5a81455f0a9023d11a6776d3af5e6768e19c4f76a7dbdb3d
+  content:
+    type: requirement
+    text: A holding page returns HTTP 200 at the address that was published. It is
+      a successful response whose content says not yet. It does not return 404, 503
+      or any other error status at that address. Addresses under a holding host that
+      were never published still return 404, with the holding page as the body where
+      that helps.
+    normative: true
+    derived: false
+    attrs:
+      priority: must
+  revision: a37a22d7fa370c8b82fa2e992c3503b738477e36
